@@ -38,3 +38,4 @@ insert into employee values(05,'Wood',10000,'Tester','765434567654',14);
 							*/
 
 select empid,empname,salary from employee order by salary;
+select empid,empname,salary from employee order by salary desc;
