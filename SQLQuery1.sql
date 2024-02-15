@@ -17,6 +17,12 @@ create table department_info(
 							); 
 insert into employee values(01,'Adam',25000,'Jr. Developer','9876543209',10);
 insert into employee values(02,'Sunil',20000,'Jr. Developer','8765432109',20);
-							*/
 select * from employee;
 select empid,empname from employee;
+							*/
+
+update employee set salary+=1000;
+select * from employee;
+
+update employee set job = 'Tester' where empid = 2;
+select * from employee;
