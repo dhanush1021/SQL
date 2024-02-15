@@ -15,7 +15,8 @@ create table department_info(
 								deptname varchar(20) not null,
 								deptlocation varchar(50)
 							); 
-							*/
-
 insert into employee values(01,'Adam',25000,'Jr. Developer','9876543209',10);
 insert into employee values(02,'Sunil',20000,'Jr. Developer','8765432109',20);
+							*/
+select * from employee;
+select empid,empname from employee;
