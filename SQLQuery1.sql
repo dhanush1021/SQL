@@ -35,7 +35,13 @@ insert into employee values(02,'Mike',15000,'Backend Developer','9876543212',11)
 insert into employee values(03,'Puma',35000,'Front Developer','98765434567',12);
 insert into employee values(04,'Das',20000,'Jr. Developer','65432345678',13);
 insert into employee values(05,'Wood',10000,'Tester','765434567654',14);
-							*/
 
 select empid,empname,salary from employee order by salary;
 select empid,empname,salary from employee order by salary desc;
+							*/
+
+select count(salary) from employee;
+select sum(salary) from employee;
+select avg(salary) from employee;
+select min(salary) from employee;
+select max(salary) from employee;
