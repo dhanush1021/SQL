@@ -38,10 +38,20 @@ insert into employee values(05,'Wood',10000,'Tester','765434567654',14);
 
 select empid,empname,salary from employee order by salary;
 select empid,empname,salary from employee order by salary desc;
-							*/
 
 select count(salary) from employee;
 select sum(salary) from employee;
 select avg(salary) from employee;
 select min(salary) from employee;
 select max(salary) from employee;
+
+insert into employee (empid,empname,salary,deptid) values (6,'sunil',567898,15);
+select * from employee;
+							*/
+ select -abs(salary) as '-Ve salary' from employee
+ select ceiling(90.239)
+ select floor(34.567)
+ select sign(20),sign(-20),sign(0)
+ select square(2),sqrt(9)
+ select pi()
+ select sin(pi()),cos(30),tan(30),1/sin(30),1/cos(30),cot(30)
