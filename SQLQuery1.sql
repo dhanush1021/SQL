@@ -56,7 +56,6 @@ select * from employee;
  select pi()
  select sin(pi()),cos(30),tan(30),1/sin(30),1/cos(30),cot(30)
 
-							*/
 select getdate()
 select datename(year,getdate()) as year
 select datename(month,getdate()) as month
@@ -64,3 +63,7 @@ select datename(hour,getdate())as hour
 select datename(minute,getdate()) as minute
 select datediff(year,'january 9 1995',getdate()) as year
 select dateadd(year,100, current_timestamp) as year
+
+							*/
+
+select job,Count(job) as 'No of employees' from employee group by job having job = 'Jr. Developer'
