@@ -66,4 +66,4 @@ select dateadd(year,100, current_timestamp) as year
 
 							*/
 
-select job,Count(job) as 'No of employees' from employee group by job
+select job,Count(job) as 'No of employees' from employee group by job having job = 'Jr. Developer'
